@@ -1,0 +1,92 @@
+body {
+    /* Removes default margin around body */
+    margin: 0;
+  }
+  
+  header {
+    /* Sets background color to navy blue */
+    background-color: #0b1c51;
+    /* Adds spacing between header and the main body*/
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    /* Changes font */
+    font-family: "Times New Roman";
+    /* On Non-desktop, font size is 52 pixels */
+    font-size: 52px;
+    /* Text color is white */
+    color: #fff;
+    /* Centers text */
+    text-align: center;
+    /* Removes default margins around 'h1' element */
+    margin: 0;
+    /* Pushes text 20 pixels down from top of the page */
+    padding-top: 20px;
+  }
+  
+  header nav {
+    /* Initiates Flex Box */
+    display: flex;
+    /* Centers text*/
+    justify-content: center;
+  }
+  
+  header nav ul {
+    /* Initiates flexbox */
+    display: flex;
+    /* Removes default padding left of unordered list*/
+    padding-left: 0;
+    /* Remvoes bullets of unordered list*/
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    /* Changes font*/
+    font-family: Montserrat;
+    /* Text is white*/
+    color: #fff;
+    /* Removes Underline of article element*/
+    text-decoration: none;
+    /* Adds spacing to the right of articles*/
+    margin: 0 20px 0 0;
+  }
+  header nav ul li:last-child a {
+    /* Asserts last article is the last of list and margin after
+        article is removed */
+    margin-right: 0;
+  }
+  
+  /* If screen is 600 pixels or more, desktop version is activated*/
+  @media all and (min-width: 600px) {
+    header {
+        /* Default flex direction is row*/
+        /* Initiates flex box */
+      display: flex;
+      /* Puts content on opposite sides of screen from eachother with
+      space between and alittle on ends*/
+      justify-content: space-between;
+      /* Makes padding of top and bottom 0 and padding on left and right 30 pixels*/
+      padding: 0 30px;
+    }
+  
+    header h1 {
+        /* font size 42 pixels on desktop */
+      font-size: 42px;
+      /* Makes top and bottom margin of h1 element 14 pixels */
+      margin: 14px 0;
+      /* Lowers text of h1 element by 6 pixels */
+      padding-top: 6px;
+    }
+  
+    header nav {
+        /*Makes top of margin 14 pixels */
+      margin-top: 14px;
+    }
+  
+    header nav ul li a:hover {
+        /* when Hovering cursor over articles change text color
+        from white to grey */
+      color: #bdbdbd;
+    }
+  }
